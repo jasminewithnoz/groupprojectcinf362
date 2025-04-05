@@ -1,0 +1,12 @@
+{
+  "user@example.com": [
+    {
+      "destination": "Paris, France",
+      "link": "https://www.example.com/paris"
+    },
+    {
+      "destination": "Tokyo, Japan",
+      "link": "https://www.example.com/tokyo"
+    }
+  ]
+}

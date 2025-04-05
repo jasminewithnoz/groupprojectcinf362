@@ -1,0 +1,132 @@
+<!-- Group Project - Travel Itinerary ROAMREADY -->
+<!-- Jasmine Dempster & Adriana Gray -->
+<!-- CINF362 -->
+<!-- 3/20/25 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="locations.css">
+    <script src="slidingimages.js"></script>
+    <title>RoamReady - Destinations</title>
+</head>
+<body>
+    <nav class="section_container nav__container">
+        <div class="nav__logo">
+            <img src="placeholderlogo.png" alt="roambuddylogo">
+            <span>RoamReady</span>
+            
+        </div>
+        <ul class="nav__links">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="account.html">Itineraries</a></li>
+            <li class="link"><a href="places.html">Destinations</a></li>
+            <li class="link"><a href="signin.html">Sign In</a></li>
+            <li class="link"><a href="logout.php">Logout</a></li>
+        </ul>
+    </nav>
+    
+    <header>
+    <img src="main.jpg" alt="Header Background" class="header-bg">
+    <div class="header__content">
+      <h1>Destinations</h1>
+    </div>
+     <div class="topnav">
+        <input type="text" placeholder="Search..">
+     </div>
+    </header>
+    
+    <section class="section__container holiday__container">
+        <h2 class="section__title">Check out Scenic Views!</h2>
+        
+        <section class="section__container tour__container">
+            <div class="tour__card">
+                <div class="tour__card_details">
+                <h4>Belize</h4>
+                <p>7 Days</p>
+                </div>
+            <img src="belize.jpg" alt="tourofbel" />
+            </div>
+
+            <div class="tour__card">
+                <div class="tour__card_details">
+                <h4>Cancún</h4>
+                <p>14 Days</p>
+                </div>
+            <img src="cancunimage.jpg" alt="tourofc" />
+            </div>
+
+            <div class="tour__card">
+                <div class="tour__card_details">
+                <h4>Bahamas</h4>
+                <p>7 Days</p>
+                </div>
+             <img src="waterfall.jpg" alt="tourofb" />
+            </div>
+
+            <div class="tour__card">
+                <div class="tour__card_details">
+                    <h4>LA</h4>
+                    <p>7 Days</p>
+                </div>
+            <img src="la.jpg" alt="tourofla" />
+            </div>
+        </section>
+
+        <div class="slideshow__container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <a href="https://www.tripadvisor.com/AttractionProductReview-g612474-d17418672-Half_Day_El_Yunque_Rainforest_and_Waterslide_Guided_Tour-Fajardo_Puerto_Rico.html">
+                    <img src="puertoricoimage.jpg" alt="El Yunque Rainforest" style="width:100%">
+                    <div class="text">El Yunque Rainforest</div>
+                </a>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <a href="https://www.tripadvisor.com/AttractionProductReview-g612474-d11450364-Icacos_Deserted_Island_Catamaran_Snorkel_and_Picnic_Cruise-Fajardo_Puerto_Rico.html">
+                    <img src="bahamasimage.jpg" alt="Icacos Deserted Island" style="width:100%">
+                    <div class="text">Icacos Deserted Island</div>
+                </a>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <a href="https://www.tripadvisor.com/AttractionProductReview-g612474-d17418672-Half_Day_El_Yunque_Rainforest_and_Waterslide_Guided_Tour-Fajardo_Puerto_Rico.html">
+                    <img src="thailandimage.jpg" alt="Bio Bay" style="width:100%">
+                    <div class="text">Bio Bay</div>
+                </a>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <footer>
+        <div class="section__container footer__container">
+            <p class="section__header">Our Team</p>
+            <h2 class="section__title">Contact Us</h2>
+            <div class="socialmedia">
+                <span><i class="ri-facebook-box-fill"></i></span>
+                <span><i class="ri-twitter-fill"></i></span>
+                <span><i class="ri-threads-line"></i></span>
+                <span><i class="ri-instagram-fill"></i></span>
+                <span><i class="ri-tiktok-fill"></i></span>
+                <span><i class="ri-linkedin-box-fill"></i></span>
+                <span><i class="ri-youtube-fill"></i></span>
+            </div>
+            <p class="description">Here to help with all your travel and buddy needs</p>
+        </div>    
+    </footer>
+</body>
+</html>
