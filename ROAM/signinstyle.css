@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@media (max-width: 768px) { }
+@media (max-width: 480px) { }
+
+:root{
+    --primary-color:#4DB6AC;
+    --primary-color-dark:#00796B;
+    --secondary-color:#FF6F61;
+    --bg-color: #FFB74D;
+    --darker-bg-color: #ffa31c;
+    --text-light:#f3f4f6;
+    --text-dark:#333333;
+    --max-width: 1200px;
+    --font-heading: 'Kaushan Script', cursive;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section__container{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+}
+
+.section__header {
+    text-align: center;
+    font-size: 1.5 rem;
+    color: var(--secondary-color);
+    font-family: var(--font_heading);
+}
+
+.section__title{
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    position: relative;
+}
+
+.section__title::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background-color: var(--secondary-color);
+}
+
+.section__subtitle{
+    font-size: 1rem;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.btn{
+    padding: 0.9rem 3rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    color: var(--white);
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background-color: var(--primary-color-dark);
+}
+
+a{
+    text-decoration: none;
+}
+
+img {
+    width: 100%
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg-color);
+}
+
+.nav__container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    display: flex;
+    align-items: flex;
+    gap: 10px;
+}
+
+.nav__logo img {
+    max-width: 25px;
+}
+
+.nav__logo span{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    text-shadow: 2px 2px rgba(255, 255, 255, 0.5);
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.link a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var (--text-dark);
+    transition: 0.3s;
+}
+
+.link a:hover {
+    color: var(--secondary-color);
+}
+
+header {
+    min-height: 800px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    position: relative;
+}
+
+.header__content {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header__form {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+}
+
+.header__form input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid var(--text-dark);
+    border-radius: 5px;
+}
+
+.header__form .btn {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1rem;
+}
+
+
+.header__form .btn {
+    flex: 1;
+    padding: 0.9rem;
+}
+
+.tour__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.tour__card {
+    position: relative;
+}
+
+.tour__card_details {
+    position: absolute;
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    white-space: nowrap;
+}
+
+.tour__card_details h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.tour__card_details p {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    margin: auto;
+    width: fit-content;
+    color: var(--white);
+    border: 1px solid var(--white);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.tour__card img {
+    border-radius: 5px;
+    display: flex;
+}
+
+.tour__card::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: var(--text-dark);
+    opacity: 0.3;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer
+}
+
+.tour__card:hover::before {
+    opacity: 0.6;
+}
+
+.tour__card:hover p {
+    opacity: 1;
+}
+
+.holiday__grid {
+    margin: 4rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.holiday__card img {
+    border-radius: 5px;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.holiday__card h4{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.holiday__card p{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.holiday__btn{
+    text-align: center;
+}
+
+.vacation {
+    position: relative;
+    padding-bottom: 4rem;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.vacation-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+.vacation__container {
+    position: relative;
+}
+
+.vacation__container :is(.section__title, .section__subtitle) {
+    color: var(--white);
+}
+
+.vacayvideo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.vacayvideo video {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: var(--darker-bg-color);
+}
+
+.footer__container {
+    text-align: center;
+}
+
+.socialmedia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.socialmedia span {
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.socialmedia span:hover {
+    color: var(--secondary-color);
+}
+
+.footer__container .descriptions {
+    font-style: italic;
+    color: var(--text-dark);
+}
+
+
+
+
