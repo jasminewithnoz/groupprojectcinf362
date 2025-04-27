@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Belize",
+    "duration": "7 Days",
+    "image": "belize.jpg"
+  },
+  {
+    "name": "Cancún",
+    "duration": "14 Days",
+    "image": "cancunimage.jpg"
+  },
+  {
+    "name": "Bahamas",
+    "duration": "7 Days",
+    "image": "waterfall.jpg"
+  },
+  {
+    "name": "LA",
+    "duration": "7 Days",
+    "image": "la.jpg"
+  },
+  {
+    "name": "Tokyo, Japan",
+    "duration": "10 Days",
+    "image": "tokyo.jpg"
+  },
+  {
+    "name": "Lisbon, Portugal",
+    "duration": "8 Days",
+    "image": "lisbon.jpg"
+  },
+  {
+    "name": "Bangkok, Thailand",
+    "duration": "12 Days",
+    "image": "bangkok.jpg"
+  },
+  {
+    "name": "Cape Town, South Africa",
+    "duration": "10 Days",
+    "image": "capetown.jpg"
+  },
+  {
+    "name": "Seoul, South Korea",
+    "duration": "9 Days",
+    "image": "seoul.jpg"
+  },
+  {
+    "name": "Barcelona, Spain",
+    "duration": "7 Days",
+    "image": "barcelona.jpg"
+  },
+  {
+    "name": "Rome, Italy",
+    "duration": "7 Days",
+    "image": "rome.jpg"
+  },
+  {
+    "name": "Dubai, UAE",
+    "duration": "6 Days",
+    "image": "dubai.jpg"
+  },
+  {
+    "name": "Queenstown, New Zealand",
+    "duration": "10 Days",
+    "image": "queenstown.jpg"
+  },
+  {
+    "name": "Vancouver, Canada",
+    "duration": "8 Days",
+    "image": "vancouver.jpg"
+  }
+]
